@@ -1,9 +1,18 @@
-<nav>
-    <a routerLink="/">მთავარი</a>
-    <a routerLink="hotel">სასტუმრო</a>
-    <!-- <a (click)="toggleChildren()">ჩვენს შესახებ</a>
-    @if (showChildren()) {
-        <a routerLink="about">შესახებ</a>
-        <a routerLink="contact">კონტაქტი</a>
-    } -->
-</nav>
+<header class="header">
+  <div class="header-content">
+    <div class="logo">
+      <h1>სასტუმრო</h1>
+    </div>
+
+    <nav class="main-nav">
+      <a routerLink="/" class="nav-link">მთავარი</a>
+      <a routerLink="/hotel" class="nav-link">სასტუმრო</a>
+      <a routerLink="/hotel/about" class="nav-link">შესახებ</a>
+      <a routerLink="/hotel/contact" class="nav-link">კონტაქტი</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="book-btn">დაჯავშნე ახლა</button>
+    </div>
+  </div>
+</header>
